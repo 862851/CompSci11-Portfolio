@@ -1,0 +1,21 @@
+h3 {
+font-size: 70;
+color: darkviolet;
+text-align: center;
+}
+
+body {
+background-image: url(https://i.redd.it/56cit74znev01.gif)
+}
+
+p {
+color: white;
+text-align: center;
+}
+
+a {
+background-color: black;
+color: white;
+box-sizing: 20
+}
+
