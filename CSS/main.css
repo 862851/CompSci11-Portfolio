@@ -26,10 +26,12 @@ ul {
 }
 
 li {
-	display: inline;
+	float: right;
 }
 
 li a {
+	display: block;
+	padding: 6px;
 	font-color: black;
 	background-color: grey;	
 }
