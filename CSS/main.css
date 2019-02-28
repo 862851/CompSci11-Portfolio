@@ -14,9 +14,14 @@ text-align: center;
 }
 
 a {
-background-color: black;
-color: white;
+background-color: grey;
+color: black;
 box-sizing: 20
+}
+
+a:hover{
+background-color: black
+color: white
 }
 
 ul {
