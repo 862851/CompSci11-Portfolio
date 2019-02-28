@@ -30,6 +30,7 @@ ul {
 	padding: 0;
 	overflow: hidden;
 	display: block;
+	background-color: grey;
 }
 
 li {
@@ -42,7 +43,6 @@ li a {
 	text-decoration: none;
 	padding: 6px;
 	color: black;
-	background-color: grey;	
 }
 li a:hover {
 	color: white;
