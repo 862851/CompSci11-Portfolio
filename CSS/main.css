@@ -1,64 +1,78 @@
 h1 {
-color: darkviolet;
-text-align: center;
+	color: white;
+	background-color: black;
+	display: block;
+	margin: 60;
+	text-align: center;
 }
 
 h2 {
-color: white;
-text-align: center;
+	color: white;
+	text-align: center;
 }
 
 h3 {
-color: white;
+	color: white;
 }
 
 body {
-background-image: url(https://i.redd.it/56cit74znev01.gif)
+	background-image: url(https://i.redd.it/56cit74znev01.gif)
 }
 
 p {
-color: white;
-text-align: left;
+	color: white;
+	text-align: left;
 }
 
 a {
-background-color: grey;
-color: black;
-box-sizing: 20
+	background-color: grey;
+	color: black;
+	box-sizing: 20
 }
 
 a:hover{
-background-color: black
-color: white;
+	background-color: black
+	color: white;
 }
 
 b{
-color: white;
+	color: white;
 }
 
 ol {
-list-style-type: none;
-color: white;
+	list-style-type: none;
+	color: white;
 }
 
 ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-display: block;
-background-color: grey;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: block;
+	background-color: grey;
 }
 
 li a {
-display: block;
-text-align: center;
-text-decoration: none;
-padding: 6px;
-color: black;
-float: right;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 6px;
+	color: black;
+	float: right;
 }
+
 li a:hover {
-color: white;
-background-color: black;
+	color: white;
+	background-color: black;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: grey;
+	color: white;
+	float: left;
 }
