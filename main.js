@@ -4,8 +4,9 @@ function welcomeUser(){
 }
 
 function largerInteger(){
-	var number1 = prompt("Enter a number")
-	var number2 = prompt("Enter another number")
+	//WORKS
+	var number1 = parseInt(prompt("Enter a number"))
+	var number2 = parseInt(prompt("Enter another number"))
 	if (number1 > number2) {
 		alert("The first number: " + number1)
 	} else if (number2 > number1){
@@ -28,7 +29,7 @@ function positiveNegative(){
 }
 
 function orderedNumbers(){
-	//UNSURE IF WORKING
+	//INCOMPLETE
 	var number1 = prompt("Enter a number")
 	var number2 = prompt("Enter another number")
 	var number3 = prompt("Enter a third number")
@@ -44,4 +45,34 @@ function orderedNumbers(){
 		alert(number3 + ", " + number1 + ", " + number2)
 	else (number3 > number2 > number1)
 		alert(number3 + ", " + number2 + ", " + number1)
+}
+
+function namePlease(userName){
+	//NOT WORKING
+	if (userName = "Tidalwave001"){
+		console.log("Hello " + userName)
+	}
+
+	else if (userName = "Joe"){
+		console.log("Welcome " + userName)
+	}
+
+	else {
+		console.log("Invalid username")
+	}
+
+}
+
+namePlease("Joe");
+
+function yoMama(age){
+	if (age<0){
+		console.log("that can't be right")
+	}
+	else if (age<32){
+		console.log("you have time left")
+	}
+	else{
+		console.log("wow that's old")
+	}
 }
