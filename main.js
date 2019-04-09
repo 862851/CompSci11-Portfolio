@@ -30,10 +30,9 @@ function positiveNegative(){
 }
 
 function orderedNumbers(){
-	//INCOMPLETE
-	var number1 = prompt("Enter a number");
-	var number2 = prompt("Enter another number");
-	var number3 = prompt("Enter a third number");
+	var number1 = parseInt(prompt("Enter a number"));
+	var number2 = parseInt(prompt("Enter another number"));
+	var number3 = parseInt(prompt("Enter a third number"));
 	if (number1 > number2 > number3){
 		alert(number1 + ", " + number2 + ", " + number3);
 	} else if (number1 > number3 > number2){
@@ -50,7 +49,6 @@ function orderedNumbers(){
 }
 
 function namePlease(userName){
-	//NOT WORKING
 	if (userName = "Tidalwave001"){
 		console.log("Hello " + userName);
 	} else if (userName = "Joe"){
@@ -72,16 +70,20 @@ function yoMama(age){
 	}
 }
 
-function countingLoop(){
-	var text = "";
-	var i;
-	for (i = 0; i < 101; i++){
-		console.log(i + "<br>");
-	} if (i%3==0){
-		console.log("Three!" + "<br>")
-	} else if (i%5==0){
-		console.log("Five!" + "<br>")
-	} else if (i%3==0 && i%5==0){
-		console.log("ThreeFive!" + "<br>")
+function countingLoop(number){
+	 if (number%3==0 && number%5==0){
+		console.log("ThreeFive!")
+	} else if (number%5==0){
+		console.log("Five!")
+	} else if (number%3==0){
+		console.log("Three!")
+	} else {
+		console.log(number)
 	}
+}
+for (i = 1; i < 101; i++)
+	countingLoop(i);
+
+function guessNumber(){
+	var guess = parseInt(prompt("I'm thinking of a number..."))
 }
