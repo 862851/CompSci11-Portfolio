@@ -84,6 +84,16 @@ function countingLoop(number){
 for (i = 1; i < 101; i++)
 	countingLoop(i);
 
-function guessNumber(){
-	var guess = parseInt(prompt("I'm thinking of a number..."))
+function guessNumber(rng){
+	var guess = parseInt(prompt("I'm thinking of a number..."));
+	return Math.random(100);
+	if (guess < rng) {
+		prompt("Try a higher number");
+	} else if (guess > rng) {
+		prompt("Try a lower number");
+	} else if (guess = rng) {
+		alert("Ayy lmao, you got it!");
+	} else {
+		alert("Oki doki something brokie")
+	}
 }
