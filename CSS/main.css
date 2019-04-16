@@ -1,26 +1,26 @@
 h1 {
-	color: white;
-	background-color: black;
+	color: black;
 	display: block;
 	margin: 60;
 	text-align: center;
 }
 
 h2 {
-	color: white;
+	color: grey;
 	text-align: center;
 }
 
 h3 {
-	color: white;
+	color: grey;
 }
 
 body {
-	background-image: url(https://i.redd.it/56cit74znev01.gif)
+	background-image: url(https://images.alphacoders.com/545/thumb-1920-545454.jpg);
+//previous bakgrund {https://i.redd.it/56cit74znev01.gif}
 }
 
 p {
-	color: white;
+	color: black;
 	text-align: left;
 }
 
@@ -100,4 +100,13 @@ footer {
 	display: block;
 	background-color: grey;
 	text-align:center;
+}
+
+.randomlist {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: block;
+	background-color: none;
 }
