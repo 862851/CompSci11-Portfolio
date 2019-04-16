@@ -24,12 +24,15 @@ function positiveNegative(){
 		alert("The product is negative");
 	} else if (x > 0){
 		alert("The product is positive");
+	} else if (x = 0){
+		alert("Bro, that's just 0. Neither positive nor negative")
 	} else{
 		alert("Oki doki something brokie")
 	}
 }
 
 function orderedNumbers(){
+//NOT WORKING
 	var number1 = parseInt(prompt("Enter a number"));
 	var number2 = parseInt(prompt("Enter another number"));
 	var number3 = parseInt(prompt("Enter a third number"));
