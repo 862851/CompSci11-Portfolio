@@ -48,7 +48,9 @@ function orderedNumbers(){
 		alert(number3 + ", " + number1 + ", " + number2);
 	} else if (number3 > number2 > number1){
 		alert(number3 + ", " + number2 + ", " + number1);
-	} 
+	} else {
+		alert("Oki doki something brokie")
+	}
 }
 
 function namePlease(userName){
