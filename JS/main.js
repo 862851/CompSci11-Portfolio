@@ -10,8 +10,8 @@ function largerInteger(){
 		alert("The first number: " + number1);
 	} else if (number2 > number1){
 		alert("The second number: " + number2);
-	} else{
-		alert("error")
+	} else {
+		alert("Oki doki something brokie")
 	}
 }
 
@@ -25,7 +25,7 @@ function positiveNegative(){
 	} else if (x > 0){
 		alert("The product is positive");
 	} else{
-		alert("error")
+		alert("Oki doki something brokie")
 	}
 }
 
