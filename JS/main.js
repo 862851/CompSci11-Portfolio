@@ -4,7 +4,7 @@ function welcomeUser(){
 }
 
 function largerInteger(){
-	var info = alert("In this small program, the website will determine which of the two numbers you put in is larger.")
+	var inFo = alert("In this small program, the website will determine which of the two numbers you put in is larger.")
 	var number1 = parseInt(prompt("Enter a number"));
 	var number2 = parseInt(prompt("Enter another number"));
 	if (number1 > number2) {
@@ -17,6 +17,7 @@ function largerInteger(){
 }
 
 function positiveNegative(){
+	var inFo = alert("In this small program, the website will determine whether the product of three numbers (of your choice) will create a positive or negative number.")
 	var number1 = parseInt(prompt("Enter a number"));
 	var number2 = parseInt(prompt("Enter another number"));
 	var number3 = parseInt(prompt("Enter a third number"));
@@ -34,6 +35,7 @@ function positiveNegative(){
 
 function orderedNumbers(){
 //NOT WORKING
+	var inFo = alert("In this small program, the website will take three numbers of your choice and order them from largest to smallest")
 	var number1 = parseInt(prompt("Enter a number"));
 	var number2 = parseInt(prompt("Enter another number"));
 	var number3 = parseInt(prompt("Enter a third number"));
