@@ -4,6 +4,7 @@ function welcomeUser(){
 }
 
 function largerInteger(){
+	var info = alert("In this small program, the website will determine which of the two numbers you put in is larger.")
 	var number1 = parseInt(prompt("Enter a number"));
 	var number2 = parseInt(prompt("Enter another number"));
 	if (number1 > number2) {
