@@ -93,7 +93,7 @@ for (i = 1; i < 101; i++)
 	countingLoop(i);
 
 function guessNumber(rng){
-	var guess = parseInt(prompt("I'm thinking of a number..."));
+	var guess = parseInt(prompt("I'm thinking of a number between 1 and 100"));
 	return Math.random(100);
 	if (guess < rng) {
 		prompt("Try a higher number");
