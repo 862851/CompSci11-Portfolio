@@ -92,14 +92,12 @@ function countingLoop(number){
 for (i = 1; i < 101; i++)
 	countingLoop(i);
 
-function guessNumber(rng){
+function guessNumber(){
 	var guess = parseInt(prompt("I'm thinking of a number between 1 and 100"));
-	return Math.random(100);
-	if (guess < rng) {
-		prompt("Try a higher number");
-	} else if (guess > rng) {
-		prompt("Try a lower number");
-	} else if (guess = rng) {
+	var rNg = Math.floor(Math.random()*100);
+	if (guess != rNg) {
+		prompt("Try again boi")
+	} else if (guess = rNg) {
 		alert("Ayy lmao, you got it!");
 	} else {
 		alert("Oki doki something brokie")
