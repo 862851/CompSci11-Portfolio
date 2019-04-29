@@ -1,6 +1,7 @@
 function welcomeUser(){
 	var name = prompt("Enter your name:");
 	alert("Welcome " + name + "!");
+	document.getElementById("usersName").innerHTML = welcomeUser()
 }
 
 function largerInteger(){
