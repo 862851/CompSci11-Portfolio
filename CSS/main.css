@@ -15,9 +15,14 @@ h3 {
 }
 
 body {
-	background-image: url(https://images.alphacoders.com/545/thumb-1920-545454.jpg);
-//previous bakgrund {https://i.redd.it/56cit74znev01.gif}
+	background-image: url(https://stmed.net/sites/default/files/ori-and-the-blind-forest-hd-wallpapers-33462-4640174.jpg);
 }
+
+/*
+Warframe gif url(https://i.redd.it/56cit74znev01.gif);
+Ori background url(https://images.alphacoders.com/545/thumb-1920-545454.jpg);
+Ori background 2 url(https://stmed.net/sites/default/files/ori-and-the-blind-forest-hd-wallpapers-33462-4640174.jpg);
+*/
 
 p {
 	color: black;
