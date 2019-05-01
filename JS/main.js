@@ -103,3 +103,31 @@ function guessNumber(){
 		alert("Oki doki something brokie")
 	}
 }
+
+function markiBoi(){
+var marksList = [96, 69, 70, 54];
+var listLength = marksList.length;
+//checking for more marks
+var uhMarks = prompt("Would you like to add to the marks list?[Y/N]")
+  if (uhMarks = Y){
+    var addMarks = parseInt(prompt("What's the mark you would like to add?"))
+    marksList.push(addMarks)
+  } else {
+    alert ("ok")
+  }
+
+//average calculator
+var marksAverage = 0;
+  marksAverage = (marksAverage + marksList[i])/marksList.length
+
+//showing the good stuff
+for (i=0; i<listLength; i++);
+  console.log ("You got a " + marksList[i] + "on a test!")
+  console.log ("Your average is " + marksAverage)
+}
+
+function lengthReader () {
+	var string = prompt("What text would you like us to measure?")
+	var stringLength = string.length
+	document.getElementById("stringLengthReader").innerHTML = "The length of the following text is " + stringLength + "letters. " + string	
+}
