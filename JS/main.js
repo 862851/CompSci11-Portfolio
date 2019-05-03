@@ -126,8 +126,37 @@ for (i=0; i<listLength; i++);
   console.log ("Your average is " + marksAverage)
 }
 
-function lengthReader () {
+function lengthReader() {
 	var string = prompt("What text would you like us to measure?")
 	var stringLength = string.length
 	document.getElementById("stringLengthReader").innerHTML = "The length of the following text is " + stringLength + "letters. " + string	
+}
+
+function mockingSpongebob() {
+	var memetext = prompt("What message would you like to mock with?");
+	var changed = "";
+	var stringLength = memetext.length;
+	for (i=0; i<stringLength; i++){
+		if (i % 2==0){
+			changed = changed + memetext[i].toLocaleLowerCase();
+				document.getElementById("spongemockery").innerHTML = changed
+		} else {
+			changed = changed + memetext[i].toLocaleUpperCase();
+				document.getElementById("spongemockery").innerHTML = changed
+		}
+	}
+}
+
+function signIn() {
+	var ign = "REHMANROCKET";
+	var passphrase = "ITSPAYDAYFELLAS";
+	var igninput = prompt("What's the user's name?").toLocaleUpperCase();
+	if (igninput==ign){
+		var passphraseinput = prompt("What's the password?").toLocaleUpperCase();
+	} else if (passphraseinput==passphrase) {
+		alert ("Welcome to the rice fields!")
+	} else {
+		alert ("You're WRONG!")
+	}
+
 }
