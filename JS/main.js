@@ -34,24 +34,36 @@ function positiveNegative(){
 }
 
 function orderedNumbers(){
-//NOT WORKING
-	var inFo = alert("In this small program, the website will take three numbers of your choice and order them from largest to smallest")
-	var number1 = parseInt(prompt("Enter a number"));
-	var number2 = parseInt(prompt("Enter another number"));
-	var number3 = parseInt(prompt("Enter a third number"));
-	if (number1 > number2 > number3){
-		alert(number1 + ", " + number2 + ", " + number3);
-	} else if (number1 > number3 > number2){
-		alert(number1 + ", " + number3 + ", " + number2);
-	} else if (number2 > number1 > number3){
-		alert(number2 + ", " + number1 + ", " + number3);
-	} else if (number2 > number3 > number1){
-		alert(number2 + ", " + number3 + ", " + number1);
-	} else if (number3 > number1 > number2){
-		alert(number3 + ", " + number1 + ", " + number2);
-	} else if (number3 > number2 > number1){
-		alert(number3 + ", " + number2 + ", " + number1);
-	} else {
+	var inFo = alert("In this small program, the website will take three numbers of your choice and order them from largest to smallest");
+	var no1 = parseInt(prompt("Enter a number"));
+	var no2 = parseInt(prompt("Enter another number"));
+	var no3 = parseInt(prompt("Enter a third number"));
+	if (no1 > no2 && no1 > no3){
+		if (no2 > no3){
+			alert(no1 + ", " + no2 + ", " + no3)
+		} else if (no3 > no2){
+			alert(no1 + ", " + no3 + ", " + no2)
+		} else {
+			alert("Oki doki something brokie")
+		}
+	} else if (no2 > no1 && no2 > no3){
+		if (no1 > no3){
+			alert(no2 + ", " + no1 + ", " + no3)
+		} else if (no3 > no1){
+			alert(no2 + ", " + no3 + ", " + no1)
+		} else {
+			alert("Oki doki something brokie")
+		}
+	} else if (no3 > no1 && no3 > no2){
+		if (no1 > no2){
+			alert(no3 + ", " + no1 + ", " + no2)
+		} else if (no2 > no1){
+			alert(no3 + ", " + no2 + ", " + no1)
+		} else {
+			alert("Oki doki something brokie")
+		}
+	}
+	 else {
 		alert("Oki doki something brokie")
 	}
 }
@@ -148,15 +160,18 @@ function mockingSpongebob() {
 }
 
 function signIn() {
-	var ign = "REHMANROCKET";
+	var ign = "BENISCOOL";
 	var passphrase = "ITSPAYDAYFELLAS";
 	var igninput = prompt("What's the user's name?").toLocaleUpperCase();
 	if (igninput==ign){
 		var passphraseinput = prompt("What's the password?").toLocaleUpperCase();
-	} else if (passphraseinput==passphrase) {
-		alert ("Welcome to the rice fields!")
+		if (passphraseinput==passphrase) {
+			alert("Welcome to the rice fields!");
+		} else {
+			alert ("You're WRONG!");
+		}
 	} else {
-		alert ("You're WRONG!")
+		alert ("You're WRONG!");
 	}
 
 }
