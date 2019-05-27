@@ -180,12 +180,12 @@ function pigLatin () {
 	//Not tested
 	var text = prompt("What would you like to encrypt in Pig Latin?")
 	var tobetranslated = text.split(" ", text.length)
-	for (var i=0, i < tobetranslated.length, i++)
+	for (var i=0; i < tobetranslated.length; i++)
 		if (i.length < 4){
 			console.log(encrypted)
 		} else if (i.length > 3) {
 			var tobetranslated = tobetranslated.split(" ", tobetranslated.length)
-			for (var i=0, i < tobetranslated.length, i++)
+			for (var i=0; i < tobetranslated.length; i++)
 				tobetranslated.push(1)
 				tobetranslated.unshift(1)
 				tobetranslated = tobetranslated + "ay"
@@ -197,21 +197,41 @@ function pigLatin () {
 }	
 
 function encryptionThingy () {
-	var passphrase = FUCKINGPASSWORD
-	var passphraseinput = prompt("Password?")
+	var passphrase = "FUCKINGPASSWORD";
+	var passphraseinput = prompt("Password?").toLocaleUpperCase();
 	if (passphraseinput = passphrase) {
-		var choice = prompt("Welcome, would you like to encrypt or decrypt text?[E/D]").toLocaleUpperCase();
-		if (choice = E) {
-			var 
-		} else if (choice = D) {
-			var
-		} else {
-			alert ("Input should be either the letter E or D")
+		var text = prompt("What would you like to hide?");
+		var ugh = ""
+		var length = text.length
+		for (var i=0; i<length; i++){
+			var r = text.charCodeAt(i)
+			var s = r*9
+			var t = String.fromCharCode(s)
+			ugh += t
 		}
+		console.log(ugh)
+		document.getElementById("encryption").innerHTML = "Encrypted text: " + ugh
 	} else {
-		alert("Yeah no")
+		alert("You're Wrong Ding Dong")
 	}
+}
 
-
-	var text = prompt("What message would you like to hide?")
+function decryptionThingy(){
+	var passphrase = "FUCKINGPASSWORD"
+	var passphraseinput = prompt("Password?").toLocaleUpperCase();
+	if (passphraseinput = passphrase){
+			var ugh = ""
+			var text = prompt("What text would you like to understand?");
+			var length = text.length
+			for (var i=0; i<length; i++){
+				var r = text.charCodeAt(i)
+				var s = r/9
+				var t = String.fromCharCode(s)
+				ugh += t
+			}
+			console.log(ugh)
+			document.getElementById("decryption").innerHTML = "Decrypted text: " + ugh
+	} else {
+		alert("You're Wrong Ding Dong")
+	}
 }
