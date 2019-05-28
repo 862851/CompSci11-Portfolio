@@ -197,7 +197,7 @@ function pigLatin () {
 }	
 
 function encryptionThingy () {
-	var passphrase = "FUCKINGPASSWORD";
+	var passphrase = "PRODUCTIVE";
 	var passphraseinput = prompt("Password?").toLocaleUpperCase();
 	if (passphraseinput = passphrase) {
 		var text = prompt("What would you like to hide?");
@@ -217,7 +217,7 @@ function encryptionThingy () {
 }
 
 function decryptionThingy(){
-	var passphrase = "FUCKINGPASSWORD"
+	var passphrase = "PRODUCTIVE"
 	var passphraseinput = prompt("Password?").toLocaleUpperCase();
 	if (passphraseinput = passphrase){
 			var ugh = ""
