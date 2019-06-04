@@ -8,11 +8,11 @@ function largerInteger(){
 	var number1 = parseInt(prompt("Enter a number"));
 	var number2 = parseInt(prompt("Enter another number"));
 	if (number1 > number2) {
-		alert("The first number: " + number1);
+		document.getByElementID("Biggie").innerHTML = "The first number: " + number1
 	} else if (number2 > number1){
-		alert("The second number: " + number2);
+		document.getElementByElementID("Biggie").innerHTML = "The second number: " + number2
 	} else {
-		alert("Oki doki something brokie")
+		document.getByElementID("Biggie").innerHTML = "Oki doki something brokie"
 	}
 }
 
@@ -23,13 +23,13 @@ function positiveNegative(){
 	var number3 = parseInt(prompt("Enter a third number"));
 	var x = number1 + number2 + number3;
 	if (x < 0){
-		alert("The product is negative");
+		document.getByElementID("Positivity").innerHTML = "The product is negative"
 	} else if (x > 0){
-		alert("The product is positive");
+		document.getByElementID("Positivity").innerHTML = "The product is positive"
 	} else if (x = 0){
-		alert("Bro, that's just 0. Neither positive nor negative")
+		document.getByElementID("Positivity").innerHTML = "Bro, that's just 0. Neither positive nor negative"
 	} else{
-		alert("Oki doki something brokie")
+		document.getByElementID("Positivity").innerHTML = "Oki doki something brokie"
 	}
 }
 
@@ -40,35 +40,36 @@ function orderedNumbers(){
 	var no3 = parseInt(prompt("Enter a third number"));
 	if (no1 > no2 && no1 > no3){
 		if (no2 > no3){
-			alert(no1 + ", " + no2 + ", " + no3)
+			document.getByElementID("LawAndOrder").innerHTML = no1 + ", " + no2 + ", " + no3
 		} else if (no3 > no2){
-			alert(no1 + ", " + no3 + ", " + no2)
+			document.getByElementID("LawAndOrder").innerHTML = no1 + ", " + no3 + ", " + no2
 		} else {
-			alert("Oki doki something brokie")
+			document.getByElementID("LawAndOrder").innerHTML = "Oki doki something brokie"
 		}
 	} else if (no2 > no1 && no2 > no3){
 		if (no1 > no3){
-			alert(no2 + ", " + no1 + ", " + no3)
+			document.getByElementID("LawAndOrder").innerHTML = no2 + ", " + no1 + ", " + no3
 		} else if (no3 > no1){
-			alert(no2 + ", " + no3 + ", " + no1)
+			document.getByElementID("LawAndOrder").innerHTML = no2 + ", " + no3 + ", " + no1
 		} else {
-			alert("Oki doki something brokie")
+			document.getByElementID("LawAndOrder").innerHTML = "Oki doki something brokie"
 		}
 	} else if (no3 > no1 && no3 > no2){
 		if (no1 > no2){
-			alert(no3 + ", " + no1 + ", " + no2)
+			document.getByElementID("LawAndOrder").innerHTML = no3 + ", " + no1 + ", " + no2
 		} else if (no2 > no1){
-			alert(no3 + ", " + no2 + ", " + no1)
+			document.getByElementID("LawAndOrder").innerHTML = no3 + ", " + no2 + ", " + no1
 		} else {
-			alert("Oki doki something brokie")
+			document.getByElementID("LawAndOrder").innerHTML = "Oki doki something brokie"
 		}
 	}
 	 else {
-		alert("Oki doki something brokie")
+		document.getByElementID("LawAndOrder").innerHTML = "Oki doki something brokie"
 	}
 }
 
-function namePlease(userName){
+
+function namePlease(userName){ //NOT PART OF WEBSITE
 	if (userName = "Tidalwave001"){
 		console.log("Hello " + userName);
 	} else if (userName = "Joe"){
@@ -80,7 +81,7 @@ function namePlease(userName){
 
 namePlease("Joe");
 
-function yoMama(age){
+function yoMama(age){ //NOT PART OF WEBSITE
 	if (age<0){
 		console.log("that can't be right");
 	} else if (age<32){
@@ -90,7 +91,7 @@ function yoMama(age){
 	}
 }
 
-function countingLoop(number){
+function countingLoop(number){ //PRINTS TO CONSOLE
 	 if (number%3==0 && number%5==0){
 		console.log("ThreeFive!")
 	} else if (number%5==0){
@@ -116,32 +117,36 @@ function guessNumber(){
 	}
 }
 
+
+
+
 function markiBoi(){
-var marksList = [96, 69, 70, 54];
+var marksList = [];
 var listLength = marksList.length;
-//checking for more marks
-var uhMarks = prompt("Would you like to add to the marks list?[Y/N]")
-  if (uhMarks = Y){
-    var addMarks = parseInt(prompt("What's the mark you would like to add?"))
-    marksList.push(addMarks)
-  } else {
-    alert ("ok")
-  }
+	while (true){
+    var addMarks = parseInt(prompt("What's the mark you would like to add?"));
+    marksList.push(addMarks);
+    var uhMarks  = prompt("Would you like to add to the marks list?[Y/N]").toLocaleUpperCase();
+    if (uhMarks = "N")  {
+    	break;
+     }
+    }
+    var marksAverage = 0;
+  	marksAverage = (marksAverage + marksList[i])/marksList.length;
+    for (i=0; i<listLength; i++);
+    document.getElementById("AverageJoe").innerHTML = "Your grades are: " + marksList[i], ", "
+  	document.getElementById("AverageJoey").innerHTML = ("You got a " + marksList[i] + " on a test!")
+  	document.getElementById("AverageJoestar").innerHTML = ("Your average is " + marksAverage)
+  	}
 
-//average calculator
-var marksAverage = 0;
-  marksAverage = (marksAverage + marksList[i])/marksList.length
 
-//showing the good stuff
-for (i=0; i<listLength; i++);
-  console.log ("You got a " + marksList[i] + "on a test!")
-  console.log ("Your average is " + marksAverage)
-}
+
+
 
 function lengthReader() {
 	var string = prompt("What text would you like us to measure?")
 	var stringLength = string.length
-	document.getElementById("stringLengthReader").innerHTML = "The length of the following text is " + stringLength + "letters. " + string	
+	document.getElementById("longBoi").innerHTML = "The length of the following text is " + stringLength + "letters. " + string	
 }
 
 function mockingSpongebob() {
@@ -166,7 +171,7 @@ function signIn() {
 	if (igninput==ign){
 		var passphraseinput = prompt("What's the password?").toLocaleUpperCase();
 		if (passphraseinput==passphrase) {
-			alert("Welcome to the rice fields!");
+			document.getByElementID("gucci").innerHTML = "Welcome to the rice fields!"
 		} else {
 			alert ("You're WRONG!");
 		}
