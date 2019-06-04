@@ -53,28 +53,7 @@ ol {
 	color: white;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	display: block;
-	background-color: grey;
-}
 
-li a {
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	padding: 6px;
-	color: black;
-	float: right;
-}
-
-li a:hover {
-	color: white;
-	background-color: black;
-}
 
 footer {
 	position: fixed;
@@ -85,6 +64,7 @@ footer {
 	color: white;
 	float: left;
 }
+
 
 .floatrightimg {
 	float:right;
