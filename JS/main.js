@@ -123,20 +123,21 @@ function guessNumber(){
 function markiBoi(){
 var marksList = [];
 var listLength = marksList.length;
-	while (true){
+	while (uhMarks = "Y"){
     var addMarks = parseInt(prompt("What's the mark you would like to add?"));
     marksList.push(addMarks);
     var uhMarks  = prompt("Would you like to add to the marks list?[Y/N]").toLocaleUpperCase();
-    if (uhMarks = "N")  {
+    if (uhMarks !== "Y")  {
     	break;
      }
     }
+    //Doesn't work from here
     var marksAverage = 0;
   	marksAverage = (marksAverage + marksList[i])/marksList.length;
     for (i=0; i<listLength; i++);
-    document.getElementById("AverageJoe").innerHTML = "Your grades are: " + marksList[i], ", "
-  	document.getElementById("AverageJoey").innerHTML = ("You got a " + marksList[i] + " on a test!")
-  	document.getElementById("AverageJoestar").innerHTML = ("Your average is " + marksAverage)
+    document.getElementById("AverageJoe").innerHTML = "Your grades are: " + marksList[i] + ", "
+  	document.getElementById("AverageJoey").innerHTML = "You got a " + marksList[i] + " on a test!"
+  	document.getElementById("AverageJoestar").innerHTML = "Your average is " + marksAverage
   	}
 
 
